@@ -1,0 +1,16 @@
+package Ejercicio;
+
+public class fibonacci {
+public static int fibonacci (int n) {  
+// es el metodo que calcula el numero Fibonacci en la posición n
+
+if (n <= 1) return n;  
+// el caso base es: si n es 0 o 1, devuelve n directamente
+
+return fibonacci(n - 1) + fibonacci(n - 2);  
+// en el caso recursivo: suma los dos numeros anteriores en la secuencia
+// Llama a la función con (n - 1) y (n - 2)
+// Ejemplo: fibonacci(5) = fibonacci(4) + fibonacci(3)
+}
+
+}
