@@ -1,0 +1,16 @@
+package Ejercicio;
+
+public class numeros1a5 {
+
+public static void main(String[] args) {
+imprimirNumeros(5);
+}
+
+static void imprimirNumeros(int n) {
+if (n == 0) {
+return; 
+}
+System.out.println(n);
+imprimirNumeros(n - 1); 
+	    }
+	}
