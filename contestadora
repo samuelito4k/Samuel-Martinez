@@ -1,0 +1,27 @@
+package Ejercicio;
+
+public class sistemadechat {
+	    public static void main(String[] args) {
+	        String[] mensajes = {
+	            "hola como estas",
+	            "gracias por tu ayuda",
+	            "hola buen dia",
+	            "adios y gracias"
+	        };
+	        int hola = 0;
+	        int gracias = 0;
+
+	        // Analiza cada mensaje
+	        for (String msg : mensajes) {
+	            if (msg.contains("hola")) {
+	                hola++;
+	            }
+	            if (msg.contains("gracias")) {
+	                gracias++;
+	            }
+	        }
+	        System.out.println("=== Análisis de Mensajes ===");
+	        System.out.println("Palabra 'hola': " + hola + " veces");
+	        System.out.println("Palabra 'gracias': " + gracias + " veces");
+	    }
+	}
