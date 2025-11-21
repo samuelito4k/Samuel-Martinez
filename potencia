@@ -1,0 +1,20 @@
+package Ejercicio;
+
+import java.util.Scanner;
+
+public class ejercicio6 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Ingresa el valor de a: ");
+        double a = sc.nextDouble();
+
+        System.out.print("Ingresa el valor de b: ");
+        double b = sc.nextDouble();
+
+        double resultado = Math.pow(a, 2) + 2 * a * b + Math.pow(b, 2);
+        System.out.println("(a+b)^2 = " + resultado);
+
+        sc.close();
+    }
+}
